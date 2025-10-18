@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('titulo');
             $table->text('descricao');
 
-            // prioridade pode ser baixa, media, alta, urgente
+            // prioridade
             $table->enum('prioridade', ['baixa', 'media', 'alta', 'urgente'])->default('baixa');
 
             // status do chamado
